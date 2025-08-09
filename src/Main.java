@@ -9,12 +9,10 @@ public class Main {
 
         System.out.print("Enter your digit : ");
         String input = consoleReadLine();
+        int limit = Integer.parseInt(input);
+        for (int i = 0; i <= limit; i++) {
 
-        for (int i = 0; i <= Integer.parseInt(input); i++) {
-
-            String outPut = fizzBuzz(i);
-
-            System.out.println(outPut);
+            System.out.println(fizzBuzz(i));
         }
     }
 
