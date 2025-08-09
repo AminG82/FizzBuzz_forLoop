@@ -31,7 +31,9 @@ public class Main {
 
     public static String ConsoleReadLine(){
         Scanner scanner = new Scanner(System.in);
-        return scanner.nextLine();
+        String result = scanner.nextLine();
+        scanner.close();
+        return result;
     }
 }
 
